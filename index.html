@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LAST_WORK</title>
+</head>
+<body>
+    <div class="wrap">
+        <form id="loginForm" class="logintext">
+            <input
+                id="input"
+                type="text"
+                required
+                maxlength = "15"
+                placeholder="What is your ID?"
+                class="login"/>
+            <input
+                type="submit"
+                value="Log In"
+                class="button"/>
+        </form>
+        <h1 id="greetingForm", class="hidden, greeting"></h1>
+        <p id="clockForm", class="clock"></p>
+        <p id="dayForm", class="day"></p>
+    </div>
+    <form id="todoForm">
+        <input type="text"
+            class="hidden"
+            placeholder="Write a TO-DO and Press Enter"
+            required/>
+    </form>
+    <ul id="todoList" class="hidden"></ul>
+    <div id="weather" class="hidden, weather">
+        <div></div>
+        <div></div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/backgound.js"></script>
+    <script src="js/todo.js"></script>
+  </body>
+</html>
