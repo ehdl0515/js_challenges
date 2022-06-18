@@ -10,7 +10,7 @@ function getClock(){
     const min = String(now.getMinutes()).padStart(2, "0")
     const sec = String(now.getSeconds()).padStart(2, "0")
     
-    dayform.innerText = `${year}년 ${month}월 ${date}일`
+    dayform.innerText = `${year}년 ${month+1}월 ${date}일`
     clock.innerText = `${hour}:${min}:${sec}`
 }
 
